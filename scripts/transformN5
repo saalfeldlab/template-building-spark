@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cp="/home/john/dev/template/template-building-spark/target/saalfeldlab-template-building-spark-0.0.1-SNAPSHOT.jar"
+java -cp "$cp" -Xmx2g -Dspark.master=local[2] process.TransformN5 "$@"
